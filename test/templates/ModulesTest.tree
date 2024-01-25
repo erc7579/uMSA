@@ -1,0 +1,7 @@
+ModulesTest
+└── When onInstall is called
+    ├── It should mark initialized
+    ├── When onInstall is called again
+    │   └── It should revert
+    └── When onUninstall is called
+        └── It should mark uninitialized

@@ -1,0 +1,31 @@
+AccountExecutionTest
+├── When executing single via 4337
+│   ├── It should return true for supportAccountMode
+│   ├── When single 4337 successful
+│   │   └── It should execute
+│   └── When single 4337 unsuccessful
+│       └── It should revert
+├── When executing batch via 4337
+│   ├── It should return true for supportAccountMode
+│   ├── When all in 4337 batch are successful
+│   │   └── It should execute
+│   └── When one in 4337 batch is unsuccessful
+│       └── It should revert
+├── When executing unsupported calltype via 4337
+│   ├── It should revert
+│   └── It should return false for supportAccountMode
+├── When executing single via executor
+│   ├── It should return true for supportAccountMode
+│   ├── When executor successful
+│   │   └── It should execute
+│   └── When executor unsuccessful
+│       └── It should revert
+├── When executing batch via executor
+│   ├── It should return true for supportAccountMode
+│   ├── When all in executor batch are successful
+│   │   └── It should execute
+│   └── When one executor batch is unsuccessful
+│       └── It should revert
+└── When executing unsupported calltype via executor
+    ├── It should revert
+    └── It should return false for supportAccountMode

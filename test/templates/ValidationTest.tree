@@ -1,0 +1,13 @@
+ValidationTest
+├── When Validation Phase
+│   ├── When a Validator is installed on account for 4337 validation
+│   │   ├── It should use validator
+│   │   └── It should return the same ValidationData as module
+│   ├── When a Validator is not installed on account for 4337 validation
+│   │   └── It should terminate validation phase
+└── When ERC1271
+    ├── When a Validator is installed on account for 1271 validation
+    │   ├── It should use validator
+    │   └── It should return the same bytes4 as module
+    └── When a Validator is not installed on account for 1271 validation
+        └── It should return 0x00000000

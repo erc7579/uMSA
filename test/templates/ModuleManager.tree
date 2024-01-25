@@ -1,0 +1,22 @@
+ModuleManagerTest
+├── When Executor is installed
+│   ├── It should be queryable as installed
+│   └── It should call onInstall
+├── When Executor is uninstalled
+│   ├── It should be queryable as uninstalled
+│   └── It should call onUninstall
+├── When Validator is installed
+│   ├── It should be queryable as installed
+│   └── It should call onInstall
+├── When Validator is uninstalled
+│   ├── When a Validator is the last validator on the account
+│   │   └── It should revert
+│   ├── When a Validator is one of many installed
+│   │   ├── It should be queryable as uninstalled
+│   │   └── It should call onUninstall
+├── When Fallback is installed
+│   ├── It should be queryable as installed
+│   └── It should call onInstall
+└── When Fallback is uninstalled
+    ├── It should be queryable as uninstalled
+    └── It should call onUninstall
